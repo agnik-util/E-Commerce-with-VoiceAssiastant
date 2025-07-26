@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVibe - Your Style Destination</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo" onclick="goHome()">ShopVibe</div>
+            
+            <!-- Search Bar -->
+            <div class="header-search">
+                <input type="text" class="header-search-input" placeholder="Search for products, brands, and more...">
+                <button class="header-search-btn">🔍</button>
+            </div>
+            
+            <!-- Categories -->
+            <nav class="categories-nav">
+                <div class="nav-item">
+                    Categories
+                    <div class="dropdown">
+                        <div class="dropdown-section">
+                            <div class="dropdown-title">Men</div>
+                            <div class="dropdown-items">
+                                <div class="dropdown-item">👔 Clothing</div>
+                                <div class="dropdown-item">👟 Footwear</div>
+                                <div class="dropdown-item">⌚ Accessories</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <div class="dropdown-title">Women</div>
+                            <div class="dropdown-items">
+                                <div class="dropdown-item">👗 Clothing</div>
+                                <div class="dropdown-item">👠 Footwear</div>
+                                <div class="dropdown-item">👜 Accessories</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <div class="dropdown-title">Kids</div>
+                            <div class="dropdown-items">
+                                <div class="dropdown-item">👕 Clothing</div>
+                                <div class="dropdown-item">👟 Footwear</div>
+                                <div class="dropdown-item">🎒 Accessories</div>
+                            </div>
+                        </div>
+                        <div class="dropdown-section">
+                            <div class="dropdown-title">Electronics</div>
+                            <div class="dropdown-items">
+                                <div class="dropdown-item">📱 Smartphones</div>
+                                <div class="dropdown-item">💻 Laptops</div>
+                                <div class="dropdown-item">🎧 Audio</div>
+                                <div class="dropdown-item">📷 Cameras</div>
+                                <div class="dropdown-item">⌚ Wearables</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="icon-btn">
+                    ❤️
+                    <span class="badge">3</span>
+                </button>
+                <button class="icon-btn">
+                    🛒
+                    <span class="badge">5</span>
+                </button>
+                
+                <!-- Profile Avatar -->
+                <div class="profile-avatar">
+                    <div class="avatar">U</div>
+                    <div class="profile-dropdown">
+                        <div class="profile-dropdown-section">
+                            <div class="profile-dropdown-items">
+                                <div class="profile-dropdown-item">📦 My Orders</div>
+                                <div class="profile-dropdown-item">👤 Account Settings</div>
+                                <div class="profile-dropdown-item">📍 Addresses</div>
+                                <div class="profile-dropdown-item">💳 Payment Methods</div>
+                                <div class="profile-dropdown-item">🔒 Privacy Settings</div>
+                                <div class="profile-dropdown-item">📞 Support</div>
+                                <div class="theme-toggle-item">
+                                    <span>🌙 Dark Mode</span>
+                                    <div class="theme-switch" onclick="toggleTheme()"></div>
+                                </div>
+                                <div class="profile-dropdown-item">🚪 Logout</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Style</h1>
+            <p>Explore millions of products from trusted brands. Fashion, electronics, and everything in between.</p>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">👔</div>
+                <div class="product-info">
+                    <h3 class="product-title">Premium Cotton Shirt</h3>
+                    <div class="product-price">₹4,099</div>
+                    <p class="product-description">Comfortable and stylish cotton shirt perfect for any occasion.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">📱</div>
+                <div class="product-info">
+                    <h3 class="product-title">Smart Phone Pro</h3>
+                    <div class="product-price">₹73,999</div>
+                    <p class="product-description">Latest technology with amazing camera and battery life.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <h3 class="product-title">Running Sneakers</h3>
+                    <div class="product-price">₹10,699</div>
+                    <p class="product-description">Lightweight and comfortable sneakers for your daily runs.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">💻</div>
+                <div class="product-info">
+                    <h3 class="product-title">Gaming Laptop</h3>
+                    <div class="product-price">₹1,06,999</div>
+                    <p class="product-description">High-performance laptop for gaming and professional work.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">👗</div>
+                <div class="product-info">
+                    <h3 class="product-title">Summer Dress</h3>
+                    <div class="product-price">₹6,599</div>
+                    <p class="product-description">Beautiful floral dress perfect for summer occasions.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">🎧</div>
+                <div class="product-info">
+                    <h3 class="product-title">Wireless Headphones</h3>
+                    <div class="product-price">₹16,499</div>
+                    <p class="product-description">Premium sound quality with noise cancellation technology.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter and get exclusive deals and offers!</p>
+            <div class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email">
+                <button class="newsletter-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link">About Us</a>
+                <a href="#" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Help Center</a>
+            </div>
+            <p>&copy; 2025 ShopVibe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
